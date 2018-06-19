@@ -10,7 +10,7 @@ using namespace std;
 template<typename InIt>
 auto adjacent_count_greater_than (InIt first, InIt last) {
    auto num = 0;
-   auto it = first;
+   auto it  = first;
    while (true) {
       it = adjacent_find (it, last, [](auto a, auto b) { return b > a; });
       if (it == last) return num;
