@@ -77,7 +77,9 @@ int main() {
 
    if (count(begin(v), end(v), 0) == n) {
       for (auto i : s) if (i == '?') cout << 0 << endl;
-   } else {
+   } else if (count(begin(v), end(v), 1) == n) {
+      for (auto i : s) if (i == '?') cout << min(k, n) << endl;
+   } else {else {
       dense_ring d(v);
       for (auto i : s) {
          if (i == '?') cout << min(k, d.max_seq_of_ones()) << endl;
