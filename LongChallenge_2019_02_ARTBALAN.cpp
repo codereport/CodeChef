@@ -11,6 +11,8 @@
 
 using namespace std;
 
+// FROM: https://github.com/rollbear/lift/blob/master/include/lift.hpp START
+
 #define LIFT_THRICE(...)                \
         noexcept(noexcept(__VA_ARGS__)) \
         -> decltype(__VA_ARGS__)        \
@@ -24,6 +26,8 @@ namespace lift {
       return[t = std::forward<T>(t)](const auto& obj) LIFT_THRICE(obj == t);
    }
 }
+
+// FROM: https://github.com/rollbear/lift/blob/master/include/lift.hpp END
 
 template<class T, class P>
 void erase_if(T& t, P p) {
