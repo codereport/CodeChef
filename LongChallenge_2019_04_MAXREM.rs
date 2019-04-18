@@ -4,13 +4,6 @@
 
 use std::io;
 
-fn get_line() -> String {
-	let mut res = String::new();
-	let stdin = io::stdin();
-	stdin.read_line(&mut res);
-	res
-}
-
 fn get_int() -> i32 {
 	get_line().trim().parse().unwrap()
 }
