@@ -5,7 +5,7 @@
 use std::io;
 
 fn get_int() -> i32 {
-	get_line().trim().parse().unwrap()
+    get_line().trim().parse().unwrap()
 }
 
 fn get_ints() -> Vec<i32> {
