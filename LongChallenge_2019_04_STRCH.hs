@@ -1,5 +1,5 @@
 -- code_report Solution
--- Video Link: 
+-- Video Link: https://youtu.be/56OebnRN6eQ
 -- Problem Link: https://www.codechef.com/APRIL19B/problems/STRCH/
 
 import Control.Monad
